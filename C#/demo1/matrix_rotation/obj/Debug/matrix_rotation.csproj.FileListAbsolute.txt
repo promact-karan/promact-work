@@ -1,5 +1,0 @@
-c:\Users\karanmehta\documents\visual studio 2015\Projects\demo1\matrix_rotation\bin\Debug\matrix_rotation.exe.config
-c:\Users\karanmehta\documents\visual studio 2015\Projects\demo1\matrix_rotation\bin\Debug\matrix_rotation.exe
-c:\Users\karanmehta\documents\visual studio 2015\Projects\demo1\matrix_rotation\bin\Debug\matrix_rotation.pdb
-c:\Users\karanmehta\documents\visual studio 2015\Projects\demo1\matrix_rotation\obj\Debug\matrix_rotation.exe
-c:\Users\karanmehta\documents\visual studio 2015\Projects\demo1\matrix_rotation\obj\Debug\matrix_rotation.pdb
