@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace demo1
 {
+	// program Details URl https://www.hackerrank.com/challenges/accessing-inherited-functions
     
     class A
     {
