@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace matrix_rotation
 {
+	// details of program https://www.hackerrank.com/challenges/matrix-rotation
     class Program
     {
         static void Main(string[] args)
