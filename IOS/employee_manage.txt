@@ -1,0 +1,79 @@
+struct Employee
+{
+	var EmployeeName : String
+	var Employeeid : Int
+	
+	var name : String
+	{
+		get
+		{
+			return EmployeeName
+		}
+		set(empname)
+		{
+			EmployeeName = empname
+		}
+	}
+	
+	var id : Int
+	{
+		get{
+			return Employeeid
+		}
+		set(empid)
+		{
+			Employeeid=empid
+		}
+	}
+}
+
+struct EmployeeAdmin
+{
+	var employeearray = [Employee]()
+	
+	var employeeVerification : Bool = true
+	mutating func addemployee(employee : Employee)
+	{
+		for emp in employeearray
+		{
+			if emp.id == employee.id
+			{
+				print("Employee ID exist");
+				employeeVerification=false
+				break
+			}
+		}
+		if employeeVerification
+		{
+			employeearray.append(employee)
+			print("Employee Add\n")
+		}
+	}
+	
+	mutating func removeEmployee(employeeid : Int)
+	{
+		var i : Int = 0
+		for emp in employeearray
+		{
+			
+			if emp.id == employeeid
+			{
+				employeearray.remove(at : i)
+				print("Employee Remove");
+				break
+			}
+			i = i + 1
+		}
+	}
+}
+var emp1 = Employee(EmployeeName: "karan", Employeeid: 1 )
+var emp2 = Employee(EmployeeName : "pranav", Employeeid : 2 )
+var emp3 = Employee(EmployeeName : "prakash", Employeeid : 3 )
+var emp4 = Employee(EmployeeName : "bhavesh", Employeeid : 1 )
+
+var EmpAdmin = EmployeeAdmin()
+EmpAdmin.addemployee(employee : emp1)
+EmpAdmin.addemployee(employee : emp2)
+EmpAdmin.addemployee(employee : emp3)
+EmpAdmin.addemployee(employee : emp4)
+EmpAdmin.removeEmployee(employeeid : 1)
